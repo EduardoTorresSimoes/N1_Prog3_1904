@@ -86,6 +86,11 @@ public class HelloController implements Initializable {
         //TODO: Ajeitar isso depois.
         //CboGenero.setValue(livross.getGenero());
         //CboAutor.setValue(livross.getAutor());
+
+        CboAutor.setValue(livross.getAutorEscolhido());
+        CboGenero.setValue(livross.getGeneroEscolhido());
+
+        //CboLivros.setValue(copiass.getlOriginal());
     }
 
     @FXML
@@ -128,8 +133,11 @@ public class HelloController implements Initializable {
         livro.setAno(TxtAno.getText());
         livro.setEdicao(TxtEdicao.getText());
 
-        livro.getAutor().add(CboAutor.getValue());
-        livro.getGenero().add(CboGenero.getValue());
+        //livro.getAutor().add(CboAutor.getValue());
+        //livro.getGenero().add(CboGenero.getValue());
+
+        livro.setAutorEscolhido(CboAutor.getValue());
+        livro.setGeneroEscolhido(CboGenero.getValue());
 
         try {
             livrosDao.gravar(livro);

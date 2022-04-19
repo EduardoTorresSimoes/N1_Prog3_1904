@@ -1,7 +1,5 @@
 package com.example.n1_prog3_javafx.model;
 
-import lombok.Data;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,6 +8,8 @@ public class Livros {
     private String edicao;
     private String ano;
     private String nome;
+    private Autor autorEscolhido;
+    private Genero generoEscolhido;
 
     private List<Genero> genero = new ArrayList<>();
     private List<Autor> autor = new ArrayList<>();
@@ -74,12 +74,26 @@ public class Livros {
         return genero;
     }
 
+    //
+
+    public Autor getAutorEscolhido() {
+        return autorEscolhido;
+    }
+
+    public void setAutorEscolhido(Autor autorEscolhido) {
+        this.autorEscolhido = autorEscolhido;
+    }
+
+    public Genero getGeneroEscolhido() {
+        return generoEscolhido;
+    }
+
+    public void setGeneroEscolhido(Genero generoEscolhido) {
+        this.generoEscolhido = generoEscolhido;
+    }
 
     @Override
     public String toString() {
         return nome;
     }
-
-    //---//
-
 }

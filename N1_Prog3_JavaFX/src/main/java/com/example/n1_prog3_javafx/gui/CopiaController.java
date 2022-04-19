@@ -56,7 +56,6 @@ public class CopiaController implements Initializable {
         CboLivros.setValue(null);
     }
 
-    //--//
     private void limparInterface(){
         TxtCodigo.setText("");
         CboLivros.setValue(null);
@@ -121,11 +120,8 @@ public class CopiaController implements Initializable {
         System.out.println("Gravar");
         Copia copia = new Copia();
 
-        //copia.setCodigo(Integer.parseInt(TxtCodigo.getText()));
-
         copia.setlOriginal(CboLivros.getValue());
         copia.setFixo(CBoxFixo.isSelected());
-
 
         try {
             copiaDao.gravar(copia);
@@ -154,7 +150,6 @@ public class CopiaController implements Initializable {
 
         ObservableList<Livros> livrosOb = FXCollections.observableArrayList(livros);
         CboLivros.setItems(livrosOb);
-
     }
 
     @Override
