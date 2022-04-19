@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<HBox prefHeight="418.0" prefWidth="374.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.n1_prog3_javafx.MainViewController">
+   <children>
+      <Pane prefHeight="418.0" prefWidth="369.0">
+         <children>
+            <Button fx:id="BtnCadLivro" layoutX="32.0" layoutY="109.0" mnemonicParsing="false" onAction="#BtnCadLivro_Action" text="Cadastrar Livro" />
+            <Button fx:id="BtnCadGenero" layoutX="154.0" layoutY="50.0" mnemonicParsing="false" onAction="#BtnCadGenero_Action" text="Cadastrar Genero" />
+            <Button fx:id="BtnCadAutor" layoutX="30.0" layoutY="50.0" mnemonicParsing="false" onAction="#BtnCadAutor_Action" text="Cadastrar Autor" />
+            <Button fx:id="BtnCadCopias" layoutX="155.0" layoutY="109.0" mnemonicParsing="false" onAction="#BtnCadCopias_Action" text="Cadastrar Copias" />
+            <Button fx:id="BtnCadAlunos" layoutX="169.0" layoutY="244.0" mnemonicParsing="false" onAction="#BtnCadAlunos_Action" text="Cadastrar Alunos" />
+            <Button fx:id="BtnCadProfessor" layoutX="24.0" layoutY="244.0" mnemonicParsing="false" onAction="#BtnCadProfessor_Action" text="Cadastrar Professor" />
+            <Button fx:id="BtnCadEmprestimo" layoutX="89.0" layoutY="340.0" mnemonicParsing="false" onAction="#BtnCadEmprestimo_Action" text="Cadastrar Emprestimo" />
+         </children>
+      </Pane>
+   </children>
+</HBox>
